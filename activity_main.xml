@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2E8B57"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="343dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/lewo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/obraz3" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/obraz" />
+
+            <ImageButton
+                android:id="@+id/prawo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/obraz2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginBottom="20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nazwaWyk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nazwa wykonwacy"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/tytAlb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FFFFFF"
+                android:text="&quot;tytuł albumu&quot;"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/liczUtw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:text="liczbą utworów : x"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rokWyd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rok wydania"
+                android:textColor="#61D918"
+                android:textColorLink="#61D918" />
+
+            <TextView
+                android:id="@+id/iloPob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ilosc pobran"
+                android:textColor="#61D918" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#61D918"
+                android:text="pobierz"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
